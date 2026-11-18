@@ -533,6 +533,46 @@ section {
 .hero-name { animation: fadeUp 0.8s ease 0.3s both; }
 .hero-tagline { animation: fadeUp 0.8s ease 0.5s both; }
 .hero-quote { animation: fadeUp 0.8s ease 0.8s both; }
+.hero-cta { animation: fadeUp 0.8s ease 1.1s both; }
+
+/* === КНОПКА В HERO === */
+.hero-cta {
+    display: inline-block;
+    margin-top: 64px;
+    padding: 18px 36px;
+    border: 1px solid var(--accent);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    transition: background 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+}
+
+.hero-cta:hover {
+    background: var(--accent);
+    color: var(--bg-deeper);
+}
+
+/* === ИЗ ПРАКТИКИ === */
+.cases {
+    border-top: 1px solid var(--hairline);
+}
+
+.contact-note {
+    margin: -36px 0 60px;
+}
+
+.cases-lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--text-muted);
+    font-style: italic;
+    max-width: 720px;
+}
 
 /* Сглаживание ссылок */
 a {
@@ -590,6 +630,7 @@ a {
         <h1 class="hero-name">Александр<br>Кончаков</h1>
         <div class="hero-tagline">Юридический архитектор бизнеса</div>
         <div class="hero-quote">Большинство уязвимостей в правовой архитектуре бизнеса заложены задолго до того, как проявились.</div>
+        <a href="https://t.me/konchakov" class="hero-cta" target="_blank" rel="noopener">Обсудить задачу</a>
     </div>
 </section>
 
@@ -626,7 +667,7 @@ a {
                 <div class="direction-number">03</div>
                 <div class="direction-content">
                     <h3>Защита нематериальных активов и&nbsp;режимов</h3>
-                    <p>Регистрация и&nbsp;закрепление прав на результаты интеллектуальной деятельности, введение режима коммерческой тайны, контур обработки персональных данных под специальные категории и&nbsp;трансграничную передачу.</p>
+                    <p>Регистрация и&nbsp;закрепление прав на результаты интеллектуальной деятельности, введение режима коммерческой тайны. Аудит обработки персональных данных, включая сайт, и&nbsp;комплексное решение вместо набора документов: требования 152-ФЗ закладываются в&nbsp;дизайн и&nbsp;пользовательские сценарии, отдельно прорабатываются специальные категории и&nbsp;трансграничная передача.</p>
                 </div>
             </div>
             <div class="direction">
@@ -654,11 +695,42 @@ a {
         <div class="audience-grid">
             <div class="audience-block">
                 <h3>Собственникам МСБ</h3>
-                <p>Производство, услуги, ритейл, стройка, IT. Особенно — если бизнес работает с&nbsp;физлицами, разворачивает франшизу или готовится к&nbsp;привлечению инвестиций.</p>
+                <p>Производство, услуги, ритейл и&nbsp;e-commerce, стройка, IT. Особенно — если бизнес работает с&nbsp;физлицами, разворачивает франшизу или готовится к&nbsp;привлечению инвестиций.</p>
             </div>
             <div class="audience-block">
                 <h3>Руководителям НКО</h3>
                 <p>Фонды, АНО, ассоциации. В&nbsp;том числе работающим с&nbsp;грантами ФПГ, ПФКИ и&nbsp;другими грантодателями, где правовая часть проверяется отдельно.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ИЗ ПРАКТИКИ -->
+<section class="cases">
+    <div class="container">
+        <div class="section-label">Из практики</div>
+        <p class="cases-lead">Несколько недавних задач. Клиенты и детали не раскрываются.</p>
+        <div class="directions-grid">
+            <div class="direction">
+                <div class="direction-number">01</div>
+                <div class="direction-content">
+                    <h3>Выход из бизнеса с непростой историей</h3>
+                    <p>Вёл выход собственника и директора из группы компаний, часть связанных обществ которой была национализирована. Разработал оптимальную по&nbsp;налогам схему с&nbsp;минимальными рисками для клиента, провёл переговоры с&nbsp;покупателями и&nbsp;довёл сделку до&nbsp;закрытия. Возможная ответственность за&nbsp;период руководства компаниями сведена к&nbsp;минимуму, какой только достижим в&nbsp;такой ситуации.</p>
+                </div>
+            </div>
+            <div class="direction">
+                <div class="direction-number">02</div>
+                <div class="direction-content">
+                    <h3>Посредническая схема для топливного трейдера</h3>
+                    <p>Спроектировал три модели посредничества в&nbsp;поставках топлива: перепродажа, транзит, комиссия. Для каждой просчитаны налоговые последствия, включая риски по&nbsp;ст.&nbsp;54.1 НК&nbsp;РФ, и&nbsp;выстроена договорная защита от&nbsp;обхода посредника.</p>
+                </div>
+            </div>
+            <div class="direction">
+                <div class="direction-number">03</div>
+                <div class="direction-content">
+                    <h3>Социальный центр под ключ</h3>
+                    <p>Выстроил правовую инфраструктуру некоммерческой организации от регистрации до операционной работы: контур данных о здоровье благополучателей, кадровый и договорной контуры, научно-техническое сотрудничество с разработчиком ассистивных технологий.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -669,8 +741,7 @@ a {
     <div class="container">
         <div class="section-label">Об авторе</div>
         <div class="about-text">
-            <p>22 года в&nbsp;праве. Прошёл путь от линейного юриста до руководителя юридической функции в&nbsp;крупных компаниях — DNS, Melon Fashion Group, ЭККО, Дом книги.</p>
-            <p>Сегодня в&nbsp;клиентах: IT-стартап, инвестиционно-строительная компания, ряд некоммерческих организаций.</p>
+            <p>22 года в&nbsp;праве, в&nbsp;том числе во&nbsp;главе юридической функции федеральной компании. Руководил юридическим отделом дивизиона в&nbsp;DNS и&nbsp;правовой поддержкой розницы в&nbsp;Melon Fashion Group. В&nbsp;ЭККО и&nbsp;Доме книги отвечал за&nbsp;всю правовую работу компании.</p>
             <p>Ядро практики — договорная и&nbsp;корпоративная архитектура, структурирование сделок, управление рисками. Накопленный опыт позволяет проектировать правовые системы под конкретную бизнес-модель, со всеми её пограничными сценариями и&nbsp;точками риска.</p>
             <p>Базируюсь в&nbsp;Калининграде, работаю удалённо.</p>
         </div>
@@ -682,6 +753,7 @@ a {
     <div class="container">
         <div class="section-label">Связаться</div>
         <h2 class="section-title">Готов обсудить ваши задачи.</h2>
+        <p class="cases-lead contact-note">Беру ограниченное число проектов. Работа начинается с&nbsp;диагностики задачи.</p>
         <div class="contact-grid">
             <a href="https://t.me/konchakov" class="contact-item" target="_blank" rel="noopener">
                 <div class="contact-icon">
@@ -694,14 +766,14 @@ a {
                 <div class="contact-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7l9 6 9-6M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l2-2h14l2 2"/></svg>
                 </div>
-                <div class="contact-label">Email</div>
+                <div class="contact-label">Почта</div>
                 <div class="contact-value">pro@konchakov.ru</div>
             </a>
             <a href="tel:+79110327881" class="contact-item">
                 <div class="contact-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                 </div>
-                <div class="contact-label">Phone</div>
+                <div class="contact-label">Телефон</div>
                 <div class="contact-value">+7 911 032-78-81</div>
             </a>
         </div>
